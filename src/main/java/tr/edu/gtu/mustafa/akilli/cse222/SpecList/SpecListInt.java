@@ -15,9 +15,9 @@ import java.util.List;
  * @author Mustafa_Akilli
  * @since Sunday 06 March 2016, 23:32 by Mustafa_Akilli
  */
-public interface SpecListInt<E extends Comparable<E>>{
+public interface SpecListInt<E>{
 
-    int DECREASING = 0; // For sortList decreasing
+    int DECREASING = -1; // For sortList decreasing
     int INCREASING = 1; // For sortList increasing
 
     /**
