@@ -53,8 +53,8 @@ public class TestScenario
 
         /*Add element in SpecList Integer*/
         System.out.println("Added Elements SpecList Integer: 22,33,44,55");
-        specListInteger.add(22);
-        specListInteger.add(33);
+        specListInteger.add(5);
+        specListInteger.add(4);
         specListInteger.add(44);
         specListInteger.add(55);
         System.out.println("SpecList Integer Elements: ");

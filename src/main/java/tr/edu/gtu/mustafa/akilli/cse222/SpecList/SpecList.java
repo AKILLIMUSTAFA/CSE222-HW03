@@ -61,7 +61,8 @@ public class SpecList<E extends Comparable<E>> extends LinkedList<E> implements 
             E nextElement = iter.next();
             for(int index=0; index<size(); ++index)
                 if(nextElement.equals(get(index)))
-                    intersectList.add(get(index));
+                    if(!intersectList.contains(get(index)))
+                        intersectList.add(get(index));
         }
 
         return intersectList;/* returns intersection list */
