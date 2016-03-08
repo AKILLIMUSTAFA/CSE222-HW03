@@ -20,12 +20,17 @@ public class SpecListTest extends TestCase {
     /**
      * No parameter constructor
      *
-     * @throws Exception
+     * @throws Exception when not setUp.
      */
     public void setUp() throws Exception {
         super.setUp();
     }//end no parameter constructor
 
+    /**
+     * Tear Down
+     *
+     * @throws Exception when not tearDown.
+     */
     public void tearDown() throws Exception {}
 
     /**

@@ -24,7 +24,7 @@ public class SpecList<E extends Comparable<E>> extends LinkedList<E> implements 
     /**
      * Appends all of the elements in the specified collection to the head of the list.
      *
-     * @param collection 's elements appends to the head of the list.
+     * @param collection Object
      * @return if the process appends is succesful then return true, otherwise return false
      */
     public Boolean addAllAtHead(Collection<? extends E> collection) {
@@ -49,7 +49,7 @@ public class SpecList<E extends Comparable<E>> extends LinkedList<E> implements 
     /**
      * Finds and returns intersection list (list of unique elements available in both collections)
      *
-     * @param collection
+     * @param collection Object
      * @return intersection list
      */
     public List<E> getIntersectList(Collection<? extends E> collection) {
@@ -71,7 +71,7 @@ public class SpecList<E extends Comparable<E>> extends LinkedList<E> implements 
     /**
      * Sorts and returns list
      *
-     * @param collection
+     * @param collection Object
      * @param decreasingOrIncreasing Select your choice
      * @return decreasing list or increasing list
      * @throws IllegalArgumentException if the parameter decreasing_or_increasing is wrong.

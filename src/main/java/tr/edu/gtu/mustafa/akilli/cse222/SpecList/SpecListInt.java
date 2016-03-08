@@ -23,7 +23,7 @@ public interface SpecListInt<E>{
     /**
      * Appends all of the elements in the specified collection to the head of the list.
      *
-     * @param collection 's elements appends to the head of the list.
+     * @param collection Object
      * @return if the process appends is succesful then return true, otherwise return false
      */
     Boolean addAllAtHead(Collection<? extends E> collection);
@@ -31,7 +31,7 @@ public interface SpecListInt<E>{
     /**
      * Finds and returns intersection list (list of unique elements available in both collections)
      *
-     * @param collection
+     * @param collection Object
      * @return intersection list
      */
     List<E> getIntersectList (Collection<? extends E>  collection);
@@ -39,7 +39,7 @@ public interface SpecListInt<E>{
     /**
      * Sorts and returns list
      *
-     * @param collection
+     * @param collection Object
      * @param decreasing_or_increasing Select your choice
      * @return decreasing list or increasing list
      */
