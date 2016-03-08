@@ -86,13 +86,16 @@ public class SpecList<E extends Comparable<E>> extends LinkedList<E> implements 
         do {
             swapped = false;
             for (int index =0; index<=  increasingSortedList.size()-2; ++index) {
-                if (increasingSortedList.get(index).compareTo(increasingSortedList.get(index+1)) == 1) {
+                if (increasingSortedList.get(index).compareTo(increasingSortedList.get(index+1)) > 0) {
                     //test whether the two elements are in the wrong order
                     E temp = increasingSortedList.get(index);
-                    increasingSortedList.add(index,increasingSortedList.get(index+1));
-                    increasingSortedList.remove(index+1);
-                    increasingSortedList.add(index+1,temp);
-                    increasingSortedList.remove(index+2);
+                    E temp_oth = increasingSortedList.get(index+1);
+
+                    increasingSortedList.remove(index);
+                    increasingSortedList.remove(index);
+
+                    increasingSortedList.add(index,temp);
+                    increasingSortedList.add(index,temp_oth);
                     swapped = true;
                 }
             }
@@ -102,12 +105,15 @@ public class SpecList<E extends Comparable<E>> extends LinkedList<E> implements 
             }
             swapped = false;
             for (int index= increasingSortedList.size()-2; index>=0 ; --index) {
-                if (increasingSortedList.get(index).compareTo(increasingSortedList.get(index+1)) == 1) {
+                if (increasingSortedList.get(index).compareTo(increasingSortedList.get(index+1)) > 0) {
                     E temp = increasingSortedList.get(index);
+                    E temp_oth = increasingSortedList.get(index+1);
+
                     increasingSortedList.remove(index);
-                    increasingSortedList.add(index,increasingSortedList.get(index+1));
-                    increasingSortedList.remove(index+1);
-                    increasingSortedList.add(index+1,temp);
+                    increasingSortedList.remove(index);
+
+                    increasingSortedList.add(index,temp);
+                    increasingSortedList.add(index,temp_oth);
                     swapped = true;
                 }
             }
