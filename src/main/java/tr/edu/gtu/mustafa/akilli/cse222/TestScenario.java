@@ -1,14 +1,21 @@
 package tr.edu.gtu.mustafa.akilli.cse222;
 
 import tr.edu.gtu.mustafa.akilli.cse222.SpecList.SpecList;
-import tr.edu.gtu.mustafa.akilli.cse222.SpecList.SpecListInt;
 
 import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Hello world!
+ * HW01_131044017_Mustafa_Akilli
  *
+ * File:   SpecList
+ *
+ * Description:
+ *
+ * TestScenario for SpecList
+ *
+ * @author Mustafa_Akilli
+ * @since Sunday 07 March 2016 by Mustafa_Akilli
  */
 public class TestScenario
 {

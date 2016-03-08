@@ -6,7 +6,16 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Created by MustafaMonster on 7.03.2016.
+ * HW01_131044017_Mustafa_Akilli
+ *
+ * File:   SpecList
+ *
+ * Description:
+ *
+ * SpecList Class
+ *
+ * @author Mustafa_Akilli
+ * @since Sunday 07 March 2016 by Mustafa_Akilli
  */
 public class SpecList<E extends Comparable<E>> extends LinkedList<E> implements SpecListInt<E>{
 
